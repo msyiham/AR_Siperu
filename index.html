@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AR.js NFT with Firebase Storage</title>
+    <title>AR.js NFT with Local Assets</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar-nft.js"></script>
   </head>
@@ -10,14 +10,14 @@
       <!-- AR.js NFT Marker -->
       <a-nft
         type="nft"
-        url="https://firebasestorage.googleapis.com/v0/b/siperu-pkmk-2024.appspot.com/o/AR_ICON"
+        url="./assets/nft/AR_ICON"
         smooth="true"
         smoothCount="10"
         smoothTolerance="0.01"
         smoothThreshold="5">
         <!-- 3D Model -->
         <a-entity
-          gltf-model="url(https://firebasestorage.googleapis.com/v0/b/siperu-pkmk-2024.appspot.com/o/the_3d_periodic_table.glb?alt=media&token=b6184b3f-04a6-4fa1-bf95-2acdbac662db)"
+          gltf-model="url(./assets/models/the_3d_periodic_table.glb)"
           scale="0.5 0.5 0.5"
           position="0 0 0">
         </a-entity>
